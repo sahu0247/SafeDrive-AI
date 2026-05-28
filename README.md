@@ -16,7 +16,7 @@
 
 ### 🔗 Quick Links & System Media
 
-| 🌐 [Prototype Live Web App](https://https://safe-drive-ai-nu.vercel.app/) | 🛠️ [About the web App](https://drive-companion.vercel.app/) | 📺 [Watch Google Drive Concept Video](https://your-google-drive-video-link-here.com) |
+| 🌐 [Prototype Live Web App](https://safe-drive-ai-nu.vercel.app/) | 🛠️ [About the web App](https://drive-companion.vercel.app/) | 📺 [Watch Google Drive Concept Video](https://your-google-drive-video-link-here.com) |
 | :---: | :---: | :---: |
 
 </div>
