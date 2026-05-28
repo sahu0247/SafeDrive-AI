@@ -1,0 +1,228 @@
+/* stylelint-disable */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* SafeDrive AI - Futuristic Dark Theme Design System */
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+    --card: 0 0% 4%;
+    --card-foreground: 0 0% 100%;
+    --popover: 0 0% 4%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 158 100% 50%;
+    --primary-foreground: 0 0% 0%;
+    --secondary: 0 0% 8%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 60%;
+    --accent: 197 100% 50%;
+    --accent-foreground: 0 0% 0%;
+    --destructive: 4 100% 59%;
+    --border: 0 0% 12%;
+    --input: 0 0% 12%;
+    --ring: 158 100% 50%;
+    --chart-1: 158 100% 50%;
+    --chart-2: 197 100% 50%;
+    --chart-3: 45 100% 51%;
+    --chart-4: 4 100% 59%;
+    --chart-5: 280 65% 60%;
+    --sidebar-background: 0 0% 4%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 158 100% 50%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 0 0% 8%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 0 0% 12%;
+    --sidebar-ring: 158 100% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --neon-green: #00FF99;
+    --danger-red: #FF3B30;
+    --amber-warning: #FFC107;
+    --ai-blue: #00C2FF;
+  }
+
+  .dark {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+    --card: 0 0% 4%;
+    --card-foreground: 0 0% 100%;
+    --popover: 0 0% 4%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 158 100% 50%;
+    --primary-foreground: 0 0% 0%;
+    --secondary: 0 0% 8%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 60%;
+    --accent: 197 100% 50%;
+    --accent-foreground: 0 0% 0%;
+    --destructive: 4 100% 59%;
+    --border: 0 0% 12%;
+    --input: 0 0% 12%;
+    --ring: 158 100% 50%;
+    --chart-1: 158 100% 50%;
+    --chart-2: 197 100% 50%;
+    --chart-3: 45 100% 51%;
+    --chart-4: 4 100% 59%;
+    --chart-5: 280 65% 60%;
+    --sidebar-background: 0 0% 4%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 158 100% 50%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 0 0% 8%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 0 0% 12%;
+    --sidebar-ring: 158 100% 50%;
+    --destructive-foreground: 0 0% 100%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-black text-white;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+@layer components {
+  .glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+  }
+
+  .glass-card-strong {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 255, 153, 0.08);
+  }
+
+  .neon-border {
+    border: 1px solid rgba(0, 255, 153, 0.3);
+    box-shadow: 0 0 8px rgba(0, 255, 153, 0.15);
+  }
+
+  .neon-text {
+    color: #00FF99;
+    text-shadow: 0 0 8px rgba(0, 255, 153, 0.4);
+  }
+
+  .danger-border {
+    border: 1px solid rgba(255, 59, 48, 0.5);
+    box-shadow: 0 0 12px rgba(255, 59, 48, 0.3);
+  }
+
+  .ai-scan-overlay {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .ai-scan-overlay::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgba(0, 194, 255, 0.8), transparent);
+    animation: scan-line 1.5s linear infinite;
+  }
+
+  .hud-text {
+    font-family: 'Courier New', monospace;
+    letter-spacing: 0.05em;
+  }
+
+  .stat-value {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@layer utilities {
+  .text-neon-green { color: #00FF99; }
+  .text-danger-red { color: #FF3B30; }
+  .text-amber-warning { color: #FFC107; }
+  .text-ai-blue { color: #00C2FF; }
+  .bg-neon-green { background-color: #00FF99; }
+  .bg-danger-red { background-color: #FF3B30; }
+  .bg-amber-warning { background-color: #FFC107; }
+  .bg-ai-blue { background-color: #00C2FF; }
+  .border-neon-green { border-color: #00FF99; }
+  .border-danger-red { border-color: #FF3B30; }
+  .border-amber-warning { border-color: #FFC107; }
+  .border-ai-blue { border-color: #00C2FF; }
+
+  /* Screen transition */
+  .screen-enter {
+    animation: screen-in 0.25s ease-out forwards;
+  }
+  @keyframes screen-in {
+    from { opacity: 0; transform: translateY(12px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Countdown ring fill */
+  @keyframes ring-drain {
+    from { stroke-dashoffset: 0; }
+    to   { stroke-dashoffset: 282.7; }
+  }
+  .ring-drain {
+    animation: ring-drain linear forwards;
+    stroke-dasharray: 282.7;
+    stroke-dashoffset: 0;
+  }
+
+  /* Authority dispatch steps */
+  @keyframes step-pop {
+    0%   { transform: scale(0.6); opacity: 0; }
+    60%  { transform: scale(1.15); opacity: 1; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  .step-pop {
+    animation: step-pop 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  }
+
+  /* Alert slide-in from top */
+  @keyframes alert-slide {
+    from { opacity: 0; transform: translateY(-20px) scale(0.95); }
+    to   { opacity: 1; transform: translateY(0) scale(1); }
+  }
+  .alert-slide { animation: alert-slide 0.3s ease-out forwards; }
+
+  /* Score ring animation */
+  @keyframes ring-fill {
+    from { stroke-dashoffset: 251.3; }
+    to   { stroke-dashoffset: var(--ring-target); }
+  }
+  .ring-fill-anim {
+    animation: ring-fill 1.2s ease-out forwards;
+  }
+
+  /* Typing dots */
+  @keyframes typing-dot {
+    0%, 60%, 100% { opacity: 0.2; transform: translateY(0); }
+    30%            { opacity: 1;   transform: translateY(-4px); }
+  }
+  .typing-dot { animation: typing-dot 1.2s ease-in-out infinite; }
+
+  /* GPS ping */
+  @keyframes gps-ping {
+    0%   { transform: scale(1); opacity: 1; }
+    100% { transform: scale(2.5); opacity: 0; }
+  }
+  .gps-ping { animation: gps-ping 1.5s ease-out infinite; }
+}
